@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: versioned-state-store-demo
+  kafka:
+    streams:
+      application-id: versioned-state-store-demo
+      bootstrap-servers: localhost:9092
+    properties:
+      default.key.serde: 'org.apache.kafka.common.serialization.Serdes$StringSerde'
+      default.value.serde: 'org.apache.kafka.common.serialization.Serdes$StringSerde'
